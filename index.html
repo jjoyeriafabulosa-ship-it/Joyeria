@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brillo Eterno - Proyecto de Joyería</title>
+  <style>
+    /* ======== ESTILOS GENERALES ======== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1c1c1c, #0e0e0e);
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #b8860b, #c0c0c0, #d4af37);
+      color: #000;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 0.7rem;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      border-bottom: 2px solid #ffd700;
+    }
+
+    section {
+      padding: 3rem 10%;
+    }
+
+    /* ======== SECCIÓN INICIO ======== */
+    #inicio {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    #inicio h1 {
+      font-size: 2.5rem;
+      color: #d4af37;
+      margin-bottom: 1rem;
+    }
+
+    #inicio p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    /* ======== SECCIÓN GALERÍA ======== */
+    #galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .pieza {
+      background: linear-gradient(145deg, #2b2b2b, #1a1a1a);
+      border: 1px solid #d4af37;
+      border-radius: 15px;
+      padding: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pieza:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+
+    .pieza img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
+    }
+
+    .pieza h3 {
+      color: #ffd700;
+    }
+
+    /* ======== SECCIÓN CONTACTO ======== */
+    #contacto {
+      background: rgba(255, 255, 255, 0.05);
+      border-top: 1px solid #444;
+      padding: 3rem 10%;
+      text-align: center;
+    }
+
+    #contacto h2 {
+      color: #d4af37;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      box-shadow: 0 0 10px #ffd700;
+    }
+
+    button {
+      margin-top: 1rem;
+      background: linear-gradient(90deg, #b8860b, #d4af37);
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+      transition: transform 0.2s ease, background 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #ffd700, #c0c0c0);
+    }
+
+    .mensaje-exito {
+      display: none;
+      color: #00ff88;
+      margin-top: 1rem;
+      font-weight: bold;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+      border-top: 1px solid #444;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>💎 Brillo Eterno 💎</header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h1>Proyecto Escolar de Joyería</h1>
+    <p>
+      "Brillo Eterno" es una propuesta escolar dedicada a la creación de joyas únicas y elegantes,
+      inspiradas en los metales preciosos y las formas naturales. Cada pieza combina arte, técnica
+      y sostenibilidad, buscando resaltar la belleza interior de quien las porta.
+    </p>
+  </section>
+
+  <section id="galeria">
+    <div class="pieza">
+      <img src="anillos/anillo de plata simple.jpeg" alt="Anillo dorado">
+      <h3>Anillo Dorado</h3>
+      <p>Inspirado en la elegancia clásica con detalles modernos.</p>
+    </div>
+    <div class="pieza">
+      <img src="anillos/collar de plata.jpeg" alt="Collar de plata">
+      <h3>Collar de Plata</h3>
+      <p>Minimalismo brillante para un estilo atemporal.</p>
+    </div>
+    <div class="pieza">
+      <img src="anillos/cobre artesanal.jpg" alt="Pulsera de cobre">
+      <h3>Pulsera de Cobre</h3>
+      <p>Hecha a mano, con un acabado artesanal y cálido.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form id="formContacto">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" id="email" placeholder="Tu correo electrónico" required>
+      <textarea id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+      <div class="mensaje-exito" id="mensajeExito">¡Gracias! Tu mensaje ha sido enviado con éxito.</div>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Brillo Eterno | Proyecto escolar de joyería
+  </footer>
+
+  <script>
+    // ======== FUNCIÓN DE CONTACTO INTERACTIVA ========
+    document.getElementById('formContacto').addEventListener('submit', function(event) {
+      event.preventDefault(); // Evita el envío real del formulario
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+      
+      if (nombre && email && mensaje) {
+        document.getElementById('mensajeExito').style.display = 'block';
+        this.reset();
+        setTimeout(() => {
+          document.getElementById('mensajeExito').style.display = 'none';
+        }, 4000);
+      } else {
+        alert('Por favor completa todos los campos.');
+      }
+    });
+  </script>
+</body>
+</html>
